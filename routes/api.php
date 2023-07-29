@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(['auth:sanctum', 'throttle:20,1',])->group(function () {
+Route::middleware(['auth:sanctum', 'throttle:20,1'])->group(function () {
     Route::resource('/dishes', DishController::class);
     Route::post('/dishes/{dish}/rate', [DishRatingController::class, 'rateDish']);
 });

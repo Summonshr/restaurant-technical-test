@@ -55,7 +55,7 @@ class DishApiTest extends TestCase
 
         $this->actingAs($user);
 
-        $response = $this->getJson('/api/dishes/' . $dish->id);
+        $response = $this->getJson('/api/dishes/'.$dish->id);
 
         $response->assertStatus(200)
             ->assertJsonStructure(['data' => ['id', 'name', 'description', 'image', 'price', 'rating']]);
@@ -74,7 +74,7 @@ class DishApiTest extends TestCase
             'price' => 12.99,
         ];
 
-        $response = $this->putJson('/api/dishes/' . $dish->id, $data);
+        $response = $this->putJson('/api/dishes/'.$dish->id, $data);
 
         $response->assertStatus(200)
             ->assertJson(['message' => 'Dish updated successfully']);
@@ -89,7 +89,7 @@ class DishApiTest extends TestCase
 
         $dish = Dish::factory()->create();
 
-        $response = $this->deleteJson('/api/dishes/' . $dish->id);
+        $response = $this->deleteJson('/api/dishes/'.$dish->id);
 
         $response->assertStatus(200)
             ->assertJson(['message' => 'Dish deleted successfully']);
@@ -108,16 +108,14 @@ class DishApiTest extends TestCase
             'rating' => 5,
         ];
 
-        $response = $this->postJson('/api/dishes/' . $dish->id . '/rate', $data);
+        $response = $this->postJson('/api/dishes/'.$dish->id.'/rate', $data);
 
         $response->assertStatus(200)
             ->assertJson(['message' => 'Dish rated successfully']);
 
-
-        $response = $this->getJson('/api/dishes/' . $dish->id)->assertJsonStructure(['data' => [
-            'id', 'name', 'description', 'image', 'price', 'rating'
+        $response = $this->getJson('/api/dishes/'.$dish->id)->assertJsonStructure(['data' => [
+            'id', 'name', 'description', 'image', 'price', 'rating',
         ]])->assertJson(['data' => ['rating' => 5]]);
-
 
         $this->assertDatabaseHas('dish_ratings', [
             'dish_id' => $dish->id,
@@ -134,7 +132,7 @@ class DishApiTest extends TestCase
 
         $this->actingAs($smeagol);
 
-        $response = $this->postJson('/api/dishes/' . $dish->id . '/rate', ['rating' => 5]);
+        $response = $this->postJson('/api/dishes/'.$dish->id.'/rate', ['rating' => 5]);
 
         $response->assertStatus(403)
             ->assertJson(['message' => 'Sméagol cannot rate dishes at The Dancing Pony.']);

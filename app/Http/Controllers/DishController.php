@@ -12,7 +12,7 @@ class DishController extends Controller
 {
     public function store(StoreDishRequest $request)
     {
-        $dish = Dish::create($request->all());
+        $dish = Dish::create($request->validated());
 
         return response()->json(['message' => 'Dish created successfully', 'dish' => $dish], 201);
     }
@@ -20,11 +20,11 @@ class DishController extends Controller
     public function index(Request $request)
     {
         $query = $request->input('query');
-
+        $limit = $request->input('limit', 10);
         $dishes = Dish::with('ratings')->when($query, function ($queryBuilder) use ($query) {
-            $queryBuilder->where('name', 'like', '%' . $query . '%')
-                ->orWhere('description', 'like', '%' . $query . '%');
-        })->paginate($request->input('limit', 10));
+            $queryBuilder->where('name', 'like', '%'.$query.'%')
+                ->orWhere('description', 'like', '%'.$query.'%');
+        })->paginate($limit);
 
         $dishes->setCollection(collect($dishes->items())->map->append('rating'));
 
@@ -42,7 +42,7 @@ class DishController extends Controller
 
     public function update(UpdateDishRequest $request, Dish $dish)
     {
-        $dish->update($request->all());
+        $dish->update($request->validated());
 
         return response()->json(['message' => 'Dish updated successfully', 'dish' => $dish]);
     }
