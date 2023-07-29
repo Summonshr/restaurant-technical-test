@@ -34,12 +34,10 @@ class DatabaseSeeder extends Seeder
             'description' => 'Description Dish 1',
             'price' => 10,
         ]);
-
         Dish::create([
             'name' => 'Dish 2',
             'description' => 'Description Dish 2',
             'price' => 20,
         ]);
-
     }
 }

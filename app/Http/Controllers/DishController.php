@@ -49,7 +49,6 @@ class DishController extends Controller
 
     public function destroy(DestroyDishRequest $request, Dish $dish)
     {
-
         $dish->delete();
 
         return response()->json(['message' => 'Dish deleted successfully']);

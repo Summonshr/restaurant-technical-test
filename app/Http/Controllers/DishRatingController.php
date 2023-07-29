@@ -9,7 +9,6 @@ class DishRatingController extends Controller
 {
     public function rateDish(RateDishRequest $request, Dish $dish)
     {
-
         $user = $request->user();
 
         if ($user->nickname === '_Sméagol_') {
