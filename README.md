@@ -1,66 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Restaurant and Dish App - Technical Test
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![App Logo](app_logo.png)
 
-## About Laravel
+Welcome to the technical test for the Software Engineer position for our Restaurant and Dish App. This app aims to revolutionize the dining experience by allowing users to explore nearby restaurants, view their menus, and discover delicious dishes. Users can also rate and review restaurants and dishes, helping others make informed decisions. Restaurant owners have access to a user-friendly interface to manage their restaurant information and respond to reviews.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Restaurant Description
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The Dancing Pony is a charming restaurant located in the heart of the city, known for its delectable dishes and warm ambiance. Our restaurant offers a diverse menu featuring a wide range of cuisines, from traditional comfort food to exotic delicacies. Our team of talented chefs takes pride in creating culinary masterpieces that tantalize the taste buds of our esteemed guests.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Whether you're looking for a cozy spot for a romantic dinner or a lively venue to celebrate with friends and family, The Dancing Pony has something to offer for every occasion. Our friendly staff is dedicated to providing top-notch service, ensuring that each dining experience is nothing short of exceptional.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 1. Restaurant Listing and Details
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Create a feature that displays nearby restaurants on a map and in a list format. When users click on a restaurant, the app should show its details, including the name, address, contact information, and user reviews.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 2. Dish Recommendations
 
-## Laravel Sponsors
+Implement a feature that suggests popular or recommended dishes based on user preferences and ratings. This feature should enhance the user experience by helping them discover new and exciting dishes.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 3. User Authentication and Reviews
 
-### Premium Partners
+Develop a user authentication system to allow users to create accounts and log in. Users should be able to rate and write reviews for restaurants and dishes. Implement a way for restaurant owners to respond to user reviews.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### 4. Search and Filter
 
-## Contributing
+Create a search functionality that enables users to find specific dishes or restaurants based on their preferences. Additionally, allow users to filter search results by cuisine type, price range, and user ratings.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 5. Performance and Optimization
 
-## Code of Conduct
+Optimize the app's performance to ensure smooth and responsive user interactions. Pay attention to factors like loading times, memory management, and network efficiency.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Submission
 
-## Security Vulnerabilities
+When you complete the technical test, please provide us with the following:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. A link to your version-controlled repository containing the app's source code.
+2. Clear instructions on how to set up and run the app locally.
 
-## License
+## Evaluation
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Your technical test will be evaluated based on the following criteria:
+
+- Completion of the specified tasks
+- Code quality and organization
+- User interface design and user experience
+- Error handling and edge case considerations
+- Performance and efficiency of the app
+
+We look forward to reviewing your work and discussing your solutions in the subsequent interview. Good luck, and feel free to reach out if you have any questions!
+
+For more information about our company, visit [www.restaurantdishapp.com](http://www.restaurantdishapp.com).
